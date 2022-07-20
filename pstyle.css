@@ -1,6 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-/* common style Start */
+/* common style */
 main{
     display: flex;
     flex-direction: row;
@@ -20,9 +20,6 @@ main{
     flex-direction: column;
     align-items: center
 }
-/* common style End */
-
-/* Banner Start */
 .container{
     width: 1321px;
 }
@@ -67,67 +64,48 @@ p{
     width: 581px;
     height: 613px;
     margin: 33px;
-    transition: .5s;
-}
-.banner-image img:hover{
-    transform: scale(1.1) rotate(-3deg);
 }
 
-/* Banner End  */
-
-/* Blog Start || Section Design CSS */
+/* Blog Section Design CSS */
 .blog-section{
     margin-top: 130px;
     margin-bottom: 130px;
 }
 .card{
     width: 312px;
-    height: 362px;
+    height: 242px;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
 }
-.card img{
-    width: 312px;
-    height: 175px;
+
+.card img {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    width: 80px;
+    height: 60px;
+    padding-top: 40px;
+    padding-left: 30px;
 }
-.card a{
-    text-decoration: none;
-    color: #161616;
+span{
+    padding-left: 25px;
+    font-size: 25px;
 }
 .blog-content{
-    margin: 20px;
+    margin: 10px;
 }
-.blog-btn{
-    width: 100px;
-    height: 32px;
-    border: 1px solid #161616;
-    border-radius: 5px;
-    background-color: white;
-    font-size: 16px;
-    margin-bottom: 15px;
+.blog-content p{
+    color: #4D4D4D;
+    text-align: center;
 }
 .blog-content h3{
-    font-size: 18px;
-    margin-top: 0px;
-}
-.icon{
-    display: flex;
-}
-.fa-clock{
-    padding-right: 10px;
-}
-.fa-comment-dots{
-    padding-right: 10px;
-}
-.icon1{
-    margin-right: 30px;
+    text-align: center;
 }
 .blog-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
 }
-#five, #nine{
+#six{
     visibility: hidden;
 }
 #one{
@@ -148,13 +126,13 @@ p{
     border-radius: 5px;
     font-size: 20px;
     margin-bottom: 15px;
-    background: #FFFFFF;
-    color: #161616;
+    background: #DD0000;
+    color: #ffffff;
     font-weight: 500;
     margin: 0px;
     padding: 0px;
     border: 0px;
-    margin-bottom: -32px;
+    
 }
 .blog-button2{
     width: 252px;
@@ -163,27 +141,20 @@ p{
     border-radius: 5px;
     font-size: 20px;
     margin-bottom: 15px;
-    background: #DD0000;
-    color: #FFFFFF;
+    background: #fcfcfc;
+    color: #000000;
     font-weight: 500;
     margin: 0px;
     padding: 0px;
     border: 0px;
+    
 }
-
-/* Blog End  */
-
-
 .view a{
     justify-content: center;
     justify-items: center;
     align-items: center;
     visibility: hidden;
 }
-
-/* Footer Start  */
-
-
 .footer{
     width: 1600px;
     height: 444px;
@@ -243,15 +214,11 @@ hr{
     color: #B9B9B9;
     text-decoration: none;
 }
-/* Footer End  */
-
-/* --------------------
-    Responsive Design 
------------------------ */
 /* For Tablet */
 @media screen and (max-width:834px) {
     .container{
-        width: 734px;   
+        width: 734px;
+        
     }
     .banner{
         display: grid;
@@ -282,7 +249,7 @@ hr{
         width: 323px;
         height: 365px;
     }
-    
+    /* Second Section */
     .blog-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -320,9 +287,8 @@ hr{
         width: 734px;
         margin-bottom: 30px;
     }
+    
 }
-
-
 /* For Mobile */
 @media screen and (max-width:376px) {
     .container{
@@ -332,9 +298,11 @@ hr{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         height: 430px;
+
     }
     .banner-title{
         padding-left: 0px;
+        
     }
     h1{
         color: white;
@@ -369,6 +337,7 @@ hr{
         align-items: center;
         margin-left: 105px;
     }
+    /* Second Section */
     .blog-section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -397,6 +366,7 @@ hr{
         width: 834px;
         height: 645px;
     }
+    
     .footer ul li{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
