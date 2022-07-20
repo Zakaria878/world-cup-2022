@@ -110,6 +110,46 @@ p{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
 }
+#five, #nine{
+    visibility: hidden;
+}
 #one{
-    visibility: hide;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    
+}
+.blog-button1{
+    width: 252px;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    color: #161616;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    margin-bottom: -32px;
+}
+.blog-button2{
+    width: 252px;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    background: #DD0000;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
